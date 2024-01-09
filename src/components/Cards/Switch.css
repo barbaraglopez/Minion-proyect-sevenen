@@ -1,0 +1,33 @@
+.switch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.barra {
+    width: 2rem;
+    height: 1rem;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.circulo {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.switch.activado .barra {
+    background-color: rgba(98, 80, 235, .5); /* color verde cuando está activado */
+}
+
+.switch.activado .circulo {
+    background-color: var(--primary-color);
+    transform: translateX(1rem);
+}

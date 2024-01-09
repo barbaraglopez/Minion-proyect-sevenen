@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #6250EB;
+    --secondary-color: #E40303;
+    --terciary-color: #E0E5FD;
+    --border-base: 1px solid;
+    --shadow-hover-base: -1px -1px 6px inset;
+    --shadow-hover-primary:  var(--shadow-hover-base) var(--primary-color);
+    --shadow-hover-secondary: var(--shadow-hover-base) var(--secondary-color);
+    --transition-hover-buttons: color 0.2s linear, background-color 0.2s linear, box-shadow 0.2s linear;
+}
+
+.boton-small {
+    width: 5rem;
+    height: 2rem;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.boton-medium{
+    width: 9rem;
+    height: 2rem;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.boton-large{
+    width: 12.5rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.boton-small:hover {
+    cursor: pointer;
+}
+
+.boton-medium:hover {
+    cursor: pointer;
+}
+
+.boton-large:hover{
+    cursor: pointer;
+}
+
+.boton-primario{
+    color: white;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border: var(--border-base) var(--primary-color);
+}
+
+.boton-secundario{
+    color: white;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    border: var(--border-base) var(--secondary-color);
+}
+
+.boton-atras{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: white;
+    font-size: 0.7rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.boton-primario:hover{
+    color: var(--primary-color);
+    border: var(--border-base) var(--primary-color);
+    background-color: white;
+    box-shadow: var(--shadow-hover-primary);
+    transition: var(--transition-hover-buttons);
+}
+
+.boton-secundario:hover{
+    color: var(--secondary-color);
+    border: var(--border-base) var(--secondary-color);
+    background-color: white;
+    box-shadow: var(--shadow-hover-secondary);
+    transition: var(--transition-hover-buttons);
+}
+
+.homeContainer{
+    width: 100vw;
+}
